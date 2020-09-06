@@ -1,16 +1,5 @@
 # zampichat
+Porjeto Flutter de um chat online em tempo real usando Firebase, até o momento o mesmo conta com envio de texto e imagens, além de funcionar até o momento apenas como um chat onde todos os usuários mandam mensagem simultaneamente.
+O chat está em desenvolvimento e futuramente terá as funções de envio de audio e conversas particulares entre duas ou mais pessoas.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para compilar o mesmo, basta executar o comando "flutter pub get" para baixar as dependencias presentes no arquivo "pubspec.yaml".
