@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:zampichat/view_image_chat.dart';
+import 'package:dynamic_url_image_cache/dynamic_url_image_cache.dart';
 
 class ChatMessage extends StatelessWidget {
   //const ChatMessage({Key key}) : super(key: key);
@@ -35,13 +36,20 @@ class ChatMessage extends StatelessWidget {
                 data['imgUrl'] != null
                     //Reconhece o clique na imagem dentro do chat;
                     ? GestureDetector(
-                        child: CachedNetworkImage(
+                        child: Image(
+                          image: DynamicUrlImageCache(
+                            imageId: data['imgUrl'],
+                            imageUrl: data['imgUrl'],
+                          ),
+                        ),
+
+                        /*CachedNetworkImage(
                           placeholder: (context, url) =>
                               CircularProgressIndicator(
                                   backgroundColor: Colors.purple[50]),
                           imageUrl: data['imgUrl'],
                           width: 250,
-                        ),
+                        ),*/
                         onTap: () {
                           print("teste click");
                           Navigator.push(

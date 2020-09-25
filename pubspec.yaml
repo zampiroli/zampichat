@@ -37,6 +37,7 @@ dependencies:
   flutter_launcher_icons: ^0.7.5
   firebase_core: ^0.4.0
   firebase_messaging: ^6.0.13
+  dynamic_url_image_cache: ^0.0.4
 
 dev_dependencies:
   flutter_test:

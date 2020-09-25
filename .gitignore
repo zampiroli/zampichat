@@ -10,7 +10,6 @@
 .svn/
 
 # IntelliJ related
-*.iml
 *.ipr
 *.iws
 .idea/
@@ -30,6 +29,10 @@
 .pub-cache/
 .pub/
 /build/
+/windows/
+/linux/
+/android/app/google-services.json
+*.json
 
 # Web related
 lib/generated_plugin_registrant.dart
